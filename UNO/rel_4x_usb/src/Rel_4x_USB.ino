@@ -21,10 +21,10 @@
 
 #include <stdlib.h>
 
-#define ch1 8 // CH1 - Relé 1
-#define ch2 9 // CH2 - Relé2
-#define ch3 10 // CH3 - Relé3
-#define ch4 11 // CH4 - Relé4
+#define ch1 8   // CH1 - Relé 1
+#define ch2 9   // CH2 - Relé2
+#define ch3 10  // CH3 - Relé3
+#define ch4 11  // CH4 - Relé4
 
 
 // Setup:
@@ -50,7 +50,7 @@ void loop(){
   while(Serial.available()>0){  // comprueba que el canal USB presenta datos nuevos
     inChar=Serial.read();       // lee un caracter (1 byte)
     if(isDigit(inChar)){        // comprueba que es un número
-     inString+=(char)inChar;    // en caso afirmativo se lo asigna a la cadena
+     inString+=(char)inChar;    // en caso afirmativo se lo añade a la cadena
     }
     if(inChar =='\n'){          // Si se detecta caracter retorno de carro = ENTER
       trama=inString.toInt();   // realiza la conversión de la cadena a número entero.

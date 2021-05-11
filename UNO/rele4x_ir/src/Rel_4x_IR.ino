@@ -10,6 +10,7 @@
 *      1-4 CONMUTA RELÉ 1-4
 *      0: ESCENA TODOS OFF
 *      9: ESCENAS TODOS ON
+*      ....
 */
 
 
